@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css"/>
+    <link rel="icon" href="https://www.favicon.cc/logo3d/560661.png" type="image/png"/>
+    <title>Math Race</title>
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/jquery-ui.min.js"></script>
+    <script src="/static/js/socket.io.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="leaderboard">
+            <div class="header">
+                <h3 class="rainbow animatedRainbow">Leaderboard</h3>
+            </div>
+            <div class="board">
+            </div>
+        </div>
+        <div class="race" id="name-input">
+            <div class="race-header">Welcome to the <span class="title">Maths Geniuses</span> Game!</div>
+            <div class="input-container">
+                <div class="text">Enter your name to join:</div>
+                <input type="text" id="name-text" placeholder="here" class="text-input" spellcheck="false" autocomplete="off"/>
+            </div>
+        </div>
+        <div class="race input-yo" id="race-input">
+            <div class="race-header">Answer the following <span class="title">question</span>:</div>
+            <div class="input-container">
+                <div class="text">What's the <i id="action">addition</i> of <span id="number-1">2</span> and <span id="number-2">3</span>?</div>
+                <input type="text" placeholder="your answer" id="answer" class="text-input no-hover"/>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/static/js/script.js"></script>
+</body>
+</html>

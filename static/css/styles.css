@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #de354c;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    display: none;
+}
+
+.leaderboard .header {
+    padding: 10px;
+    color: black;
+}
+
+.leaderboard .board {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.leaderboard .board-user {
+    color: #6db1df;
+}
+
+.leaderboard .board-user .name {
+    float: left;
+}
+
+.leaderboard .board-user .points {
+    float: right;
+}
+
+.leaderboard .board-user:nth-child(1) {
+    color: #2980b9;
+    margin: 0px;
+    background-image: url('/static/images/trophy.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 200px 1px;
+}
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2.5rem;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+
+.animatedRainbow {
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.race {
+    text-align: center;
+}
+
+.race-header {
+    color: #ffced4;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.race-header .title {
+    color: #f3f3f3;
+}
+
+.input-container {
+    background-color: #f3f3f3;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+}
+
+.input-container .text {
+    font-size: 1.5rem;
+    margin: 5px 0 15px 0;
+    letter-spacing: 0.1rem;
+}
+
+.input-container .text-input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    padding: 1rem;
+    margin-top: .5rem;
+    font-family: inherit;
+    border-bottom: 2px solid #283747;
+    transition: .3s all;
+}
+
+.input-container .text-input:hover {
+    border-bottom: 2px solid #266150;
+}
+
+.race.input-yo {
+    display: none;
+}
+
+#action {
+    font-weight: bold;
+}
