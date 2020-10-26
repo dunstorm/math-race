@@ -6,7 +6,7 @@ $(document).ready(function(){
     $('#name-text').keypress(function(e) {
         var code = e.keyCode || e.which;
         if (code == 13) {
-            socket = io.connect('http://' + document.domain + ':' + location.port + '/race');
+            socket = io.connect('https://' + document.domain + ':' + location.port + '/race');
             
             name = $('#name-text').val();
             username = name;
