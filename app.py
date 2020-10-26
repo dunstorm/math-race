@@ -7,8 +7,8 @@ app = Flask(__name__)
 app.debug = False
 # app.config['SECRET_KEY'] = 'gjr39dkjn344_!67#'
 
-socketio = SocketIO(app)
-# socketio = SocketIO(app, cors_allowed_origins="*")
+# socketio = SocketIO(app)
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 players = []
 
